@@ -116,7 +116,7 @@ class DAQ_Move_PRM1Z8_pylablib(DAQ_Move_base):
             --------
             DAQ_Move_base.move_done
         """
-        self.move_done()
+        self.controller.stop()
 
     def get_actuator_value(self):
         """
