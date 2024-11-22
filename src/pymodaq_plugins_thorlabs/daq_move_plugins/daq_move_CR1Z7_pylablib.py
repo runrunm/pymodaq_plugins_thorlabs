@@ -38,8 +38,8 @@ class DAQ_Move_CR1Z7_pylablib(DAQ_Move_base):
         self.settings.child('epsilon').setReadonly()
         self.settings.child('timeout').setValue(100)
 
-        self.settings.child('bounds').show(config('CR1Z7', 'show_bounds'))
-        self.settings.child('scaling').show(config('CR1Z7', 'show_scaling'))
+        # self.settings.child('bounds').show(config('CR1Z7', 'show_bounds'))
+        # self.settings.child('scaling').show(config('CR1Z7', 'show_scaling'))
 
     def commit_settings(self, param):
         """
